@@ -71,13 +71,37 @@
 	width:100%;
 	filter: brightness(0.5);
 	height:100%;
+
+	top:0;
+}
+.cardBoard_1:before{
+	
 	background-image: url("../../images/bg-1.png");
 	background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-	top:0;
+    background-size: cover;	
 }
-
+.cardBoard_2:before{
+	
+	background-image: url("../../images/bg-2.png");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;	
+}
+.cardBoard_3:before{
+	
+	background-image: url("../../images/bg-3.png");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;	
+}
+.cardBoard_4:before{
+	
+	background-image: url("../../images/bg-2.png");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;	
+}
 .cardBoard{
 	width:100%;
 	height:100%;
@@ -87,12 +111,15 @@
 
 .cardBoardContent{   
   position: absolute;
-  top: 50%;
-  right:0;
-  transform: translate(-50%, -50%);  
+  top: 30%;
+  width:100%;
+  right:5%;
+  text-align: right !important;
+  
 }
 
 .cardBoardTopic{
+	text-align: right  !important;
 	transition:1s;
 	text-align:center;
 	color:white;
@@ -101,7 +128,6 @@
 }
 
 .cardBoardDescription{
-	transition:1s;
-	text-align:center;
+	transition:1s;	
 	color:white;
 }

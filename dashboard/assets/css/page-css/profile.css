@@ -3,7 +3,11 @@
 /*===================
 	Profile styling 
 ====================*/
-
+.editBtn{
+	background:transparent;
+	border:none;
+	outline:none;
+}
 .profileSection{
 	width:80%;
 	margin-top:10%;

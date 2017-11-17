@@ -1,3 +1,8 @@
+<?php 
+	
+	include("assets/php/mysql_connect.inc.php"); 		
+?>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -37,32 +42,36 @@
 							<div class="col-sm-1"></div>
 							<div class="col-sm-5">
 								<div class='panelSection'>
-									
-									<div class='cardBoard'>
+									<a class='link_1' href='profile.php'>
+									<div class='cardBoard cardBoard_1'>
 									</div>
+									
 									<div class='cardBoardContent'>
-										<div class='cardBoardTopic'>
-											Topic
+										<div class='cardBoardTopic topic_1'>
+											User profile 
 										</div>
-										<div class='cardBoardDescription'>
-											description
+										<div class='cardBoardDescription desc_1'>
+											Edit your profle, check some gaming element.
 										</div>
-									</div>			
+									</div>	
+									</a>
 								</div>
 							</div>							
 							<div class="col-sm-5">
 							
-								<div class='panelSection'>									
-									<div class='cardBoard'>
+								<div class='panelSection'>	
+									<a class='link_2' href='fitcamp.php'>	
+									<div class='cardBoard cardBoard_2'>
 									</div>
 									<div class='cardBoardContent'>
-										<div class='cardBoardTopic'>
-											Topic
+										<div class='cardBoardTopic topic_2'>
+											Fitcamp
 										</div>
-										<div class='cardBoardDescription'>
-											description
+										<div class='cardBoardDescription desc_2'>
+											View and register your fitcamp.
 										</div>
-									</div>			
+									</div>
+									</a>
 								</div>
 								
 							</div>
@@ -71,31 +80,35 @@
 						<div class="col-sm-12">
 							<div class="col-sm-1"></div>
 							<div class="col-sm-5">
-								<div class='panelSection'>									
-									<div class='cardBoard'>
+								<div class='panelSection'>	
+									<a class='link_3' href='social.php'>		
+									<div class='cardBoard cardBoard_3'>
 									</div>
 									<div class='cardBoardContent'>
-										<div class='cardBoardTopic'>
-											Topic
+										<div class='cardBoardTopic topic_3'>
+											Forum
 										</div>
-										<div class='cardBoardDescription'>
-											description
+										<div class='cardBoardDescription desc_3'>
+											Read and write your forum.
 										</div>
-									</div>			
+									</div>	
+									</a>
 								</div>
 							</div>							
 							<div class="col-sm-5">
-								<div class='panelSection'>									
-									<div class='cardBoard'>
+								<div class='panelSection'>	
+									<a class='link_4' href='product.php'>	
+									<div class='cardBoard cardBoard_4'>
 									</div>
 									<div class='cardBoardContent'>
-										<div class='cardBoardTopic'>
-											Topic
+										<div class='cardBoardTopic topic_4'>
+											Product 
 										</div>
-										<div class='cardBoardDescription'>
-											description
+										<div class='cardBoardDescription desc_4'>
+											Check some fitness product.
 										</div>
-									</div>			
+									</div>		
+									</a>
 								</div>
 							</div>
 							<div class="col-sm-1"></div>
@@ -116,10 +129,12 @@
 		<script src="assets/js/jquery.nicescroll.js"></script>
 		<script src="assets/js/scripts.js"></script>
 		<script src="assets/js/main.js"></script>
-		<script src="assets/js/page-js/homepage.js"></script>
-		
+				
 		<!--script for this page -->
-
+		<script src="assets/js/page-js/homepage.js"></script>
+		<?php 			
+			include("assets/php/dashboard_function.php"); 		
+		?>		
 	</body>
 	
 </html>                     

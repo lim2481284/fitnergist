@@ -49,14 +49,14 @@ $(document).ready(function(){
 			$("#contact").css("color", "#252525");
 	  });
 		$(document).on('click', '#join' ,function(){
-		   location.href = "login.html"; 
+		   location.href = "login.php"; 
 	  });
 
 	  $("#loginBack").click(function(){
 		    location.href = "index.html"; 
 	  });
 	  $("#login").click(function(){
-		    location.href = "login.html"; 
+		    location.href = "login.php"; 
 	  });
 
 });

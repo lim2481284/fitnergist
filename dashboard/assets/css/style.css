@@ -297,7 +297,7 @@ ul.dropdown-menu {
 	list-style-type:none;
 	position:relative;
 }
-.profile_details li a i.fa.lnr {
+.profile_details li a i.fa.logout {
     position: absolute;
     top: 34%;
     right: 8%;
@@ -317,7 +317,8 @@ ul.dropdown-menu.drp-mnu li {
 .user-name p{
 	font-size:1em;
 	color:#FC8213;
-	line-height:1em;
+	line-height:2.5em;
+	padding-right:10px;
 	font-weight:700;
 }
 .user-name span {

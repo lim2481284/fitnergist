@@ -16,8 +16,8 @@
 		
 		
 		<!--css for this page -->		
-		<link href="assets/css/page-css/profile.css" rel="stylesheet" type="text/css" media="all"/>	
-		<link href="assets/css/responsive/profile.css" rel="stylesheet" type="text/css" media="all"/>	
+		<link href="assets/css/page-css/achievement.css" rel="stylesheet" type="text/css" media="all"/>	
+		<link href="assets/css/responsive/achievement.css" rel="stylesheet" type="text/css" media="all"/>	
 		
 	</head>
 	<body>	
@@ -30,47 +30,43 @@
 					<!--body content-->
 					<div class="inner-block">
 						
-						<div class='profileSection'>
-							<div class='profileImg col-sm-12'> 
-								<div class= 'col-sm-12'> 
-									<img src='assets/img/logo.png'/>
+						<div class='panelSection'>
+								
+								<div class='cardBoard'>
+								
+									<div class='cardBoardLeft'>
+										<img src='assets/images/icon.png'/>
+									</div>
+									
+									<div class='cardBoardRight'>
+										<div class='topIcon'><img src='assets/images/right.png'/> </div>
+										<div class='title'>Title  </div>
+										<div class='content'> Unlock by asdkasdklsk</div>
+										<div class='footer'>Unlocked : Nov 2017  </div>
+									</div>
+									
 								</div>
-								<div class='col-sm-12'>
-									<button class='themeButton'> Change avatar </button>
-								</div>
-							</div>	
-							<div class='profileField col-sm-12'> 
-								<table class='fieldTable'>
-									<tr>
-										<td>Name</td>
-										<td><input type='text' value='example'></td>
-									</tr>
-									<tr>
-										<td>Age</td>
-										<td><input type='text'></td>
-									</tr>
-									<tr>
-										<td>Gender</td>
-										<td>
-											<select>
-												<option> male </option>
-												<option> female </option>
-											</select>
-										</td>
-									</tr>
-									<tr>
-										<td>Email</td>
-										<td><input type='text'></td>
-									</tr>
-									<tr>
-										<td>Address</td>
-										<td><input type='text'></td>
-									</tr>		
-								</table>
-								<span class="editBtn glyphicon glyphicon-pencil"></span>
+								
 							</div>
-						</div>
-					
+
+							<div class='panelSection-locked'>
+								
+								<div class='cardBoard'>
+								
+									<div class='cardBoardLeft'>
+										<img src='assets/images/icon.png'/>
+									</div>
+									
+									<div class='cardBoardRight'>
+										<div class='topIcon'><img class='locked' src='assets/images/right.png'/> </div>
+										<div class='title'>Title  </div>
+										<div class='content'> Unlock by asdkasdklsk</div>
+										<div class='footer'>Unlocked : Nov 2017  </div>
+									</div>
+									
+								</div>
+								
+							</div>												
 						
 					</div>
 					
