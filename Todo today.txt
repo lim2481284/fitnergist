@@ -1,0 +1,90 @@
+
+web development note 
+
+prepare attack and defecned 
+	- install tool 
+		- virtual box 
+		- linux ? 
+		- 7 zip 
+		- hashmyfiles
+		- forensic tool 
+		
+
+fyp 
+	- progress bar 
+	- user role problem 
+	- profile page 
+		- profile picture 
+	- score point 
+	- challenge 
+		- create challenge
+		- achieve challenge
+	- ranking 
+		- based on score point 
+		- use profile picture 
+	- achievement 
+		- create achievement
+		- achieve achievemet 
+	- redeem
+		- create redeem item 
+		- redeem item 
+			- reduce score 
+	- fitcamp
+		- create camp
+		- join camp 
+	- product page 
+	- forum page  ( put in webNote ) 
+	
+	- think of unqieu point 
+	- make this website work and sell it ? 
+	- change ALL UI
+
+admin dashboard 
+	- content management 
+		- create fitcamp 
+		- create achievement , challenge
+		- create redeem item 
+		- create pdocut 
+	- report managemnet 
+	- user management 
+	- tracker 
+	- dashboard 
+	
+coach dashboard	
+	- dahsboard
+	- fitcamp
+	- forum  
+	- track 
+	- profile 
+	
+user 
+	- user 
+		- profile 
+		- challenge 
+		- ranking 
+		- acheivement 
+		- redeem 
+	- fitcamp
+	- forum 
+	- product 
+	- history 
+		- redeem history 
+		- purchase history 
+		- fitcamp history 
+		
+table : 
+	user : id , pass ,name ,email, age, roleId, address, gender, contact, registerDate, username 
+	attribute : height , weight, fat, water, visceral fat, bmr, pr 
+	forum : id , userId, content ,date ,img_url  	
+	product : id ,name, img_url, description, quantity, price
+	redeem : id, img_url, name, description, point, quantity
+	achievement : id, img_url, name, description, goal_condition, goal_value, scorepoint 	
+	user_achieve : userId, achevieveId, date 
+	challenge : id, img_url, name, description, scorepoint
+	user_challenge : user_id, challenge_id, date 
+	fitcamp : id, expired_date, start_date, name, location, description 
+	fitcamp_coach : camp_id, user_id 
+	user_fitcamp : user_id, camp_id, date 
+	
+Main purpose : to propose gamification strategy in fitness management 
+	
