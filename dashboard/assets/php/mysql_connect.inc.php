@@ -9,7 +9,7 @@
 	$DB_HOST	="localhost";
 	$DB_LOGIN	="root";
 	$DB_PASSWORD="";
-	$DB_NAME	="fitnergist";
+	$DB_NAME	="ftnergist";
 
 
 	$conn=mysqli_connect($DB_HOST,$DB_LOGIN,$DB_PASSWORD);

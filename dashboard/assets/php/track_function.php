@@ -23,7 +23,7 @@
 				
 				$change = $currentWeight - $weight;
 				$cValue = $cValue + $change;
-				echo "<script>alert($cValue);</script>";
+			
 				$sql="update  users set `weight` = $weight where id = $userId";	
 				
 				if(!mysqli_query($conn,$sql))

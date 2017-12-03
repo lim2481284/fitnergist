@@ -33,6 +33,7 @@
 						  <input type="text" name="name" placeholder="Full name" required/>
 						  <input type="number" name="age" placeholder="Age" required />						  
 						  <input type="number" step="0.01" name="height" placeholder="Height (cm)" required/>
+						  <input type="number" step="0.01" name="weight" placeholder="Weight (kg)" required/>
 						  <select name="gender" required> 
 								<option disabled selected>Gender</option>
 								<option value="male"> Male </option>

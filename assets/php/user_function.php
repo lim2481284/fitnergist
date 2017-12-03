@@ -17,9 +17,10 @@
 			$gender = $_POST['gender'];
 			$goalType  = $_POST['goalType'];		
 			$goalValue = $_POST['goalValue'];
+			$weight = $_POST['weight'];
 	
 			
-			$sql="insert into users (`username`,`email`,`pass`,`name`,`age`,`height`,`gender`) values ('$username', '$email', '$pass', '$name', '$age', '$height', '$gender')";
+			$sql="insert into users (`username`,`email`,`pass`,`name`,`age`,`height`,`gender`,`weight`) values ('$username', '$email', '$pass', '$name', '$age', '$height', '$gender','$weight')";
 			if(mysqli_query($conn,$sql))
 			{
 				$sql="select * from users where username = '$username' ";
