@@ -11,6 +11,37 @@
 					<span>Dashboard</span>
 			</a>
 		</li>
+		<li  class='menu-icon adminSection' >
+			<a href="#">
+				<i class="fa fa-cogs"></i>
+				<span>Content</span>				
+			</a>
+		    <ul>
+				<li><a href="fitcamp.php"><i class="fa fa-tachometer"></i><span>Fitcamp</span></a></li>
+				<li><a href="achievement.php"><i class="fa fa-tachometer"></i><span>Achievement</span></a></li>
+				<li><a href="challenge.php"><i class="fa fa-tachometer"></i><span>Challenge </span></a></li>
+				<li><a href="redeem.php"><i class="fa fa-tachometer"></i><span>Redeem </span></a></li>
+				<li><a href="product.php"><i class="fa fa-tachometer"></i><span>Product</span></a></li>				          
+			</ul>
+		</li>		
+		<li id="menu-comunicacao"   class='menu-icon adminSection'>
+			<a href="reportManagement.php">
+				<i class="fa fa-book nav_icon"></i>
+				<span>Report</span>				
+			</a>
+		</li>	
+		<li id="menu-comunicacao"   class='menu-icon adminSection'>
+			<a href="userManagement.php">
+				<i class="fa fa-book nav_icon"></i>
+				<span>User </span>				
+			</a>
+		</li>			
+		<li id="menu-comunicacao"   class='menu-icon adminSection'>
+			<a href="track.php">
+				<i class="fa fa-book nav_icon"></i>
+				<span>Tracker</span>				
+			</a>
+		</li>			
 		<li id="menu-comunicacao"   class='menu-icon trainerSection'>
 			<a href="track.php">
 				<i class="fa fa-book nav_icon"></i>
@@ -36,7 +67,13 @@
 				<li><a href="redeem.php"><i class="fa fa-tachometer"></i><span>Redeem</span></a></li>				          
 			</ul>
 		</li>
-		<li id="menu-comunicacao"   class='menu-icon'>
+		<li id="menu-comunicacao"   class='menu-icon userSection'>
+			<a href="fitcamp.php">
+				<i class="fa fa-book nav_icon"></i>
+				<span>Fitcamp</span>				
+			</a>
+		</li>
+		<li id="menu-comunicacao"   class='menu-icon trainerSection'>
 			<a href="fitcamp.php">
 				<i class="fa fa-book nav_icon"></i>
 				<span>Fitcamp</span>				
@@ -55,16 +92,23 @@
 				<span>Forum</span>
 			</a>
 		</li>
-		<li id="menu-academico"   class='menu-icon'>
+		<li id="menu-academico"   class='menu-icon userSection'>
+			<a href="product.php">
+				<i class="fa fa-file-text"></i>
+				<span>Product </span>				
+			</a>
+		</li>			
+		
+		<li id="menu-academico"   class='menu-icon trainerSection'>
 			<a href="product.php">
 				<i class="fa fa-file-text"></i>
 				<span>Product </span>				
 			</a>
 		</li>		
 		<li  class='menu-icon userSection'>
-			<a href="setting.php" >
+			<a href="history.php" >
 				<i class="fa fa-bar-chart "></i>
-				<span>Setting </span>
+				<span>History </span>
 			</a>
 		</li>
 	  </ul>
@@ -82,15 +126,27 @@
 		<script>
 			$('.userSection').show();
 			$('.trainerSection').hide();
+			$('.adminSection').hide();
 		</script>
 		";
+	}
+	else if ($userRole == 2)
+	{
+		echo "
+		<script>
+			$('.userSection').hide();
+			$('.trainerSection').show();
+			$('.adminSection').hide();
+		</script>
+		";		
 	}
 	else 
 	{
 		echo "
 		<script>
 			$('.userSection').hide();
-			$('.trainerSection').show();
+			$('.trainerSection').hide();
+			$('.adminSection').show();
 		</script>
 		";
 	}

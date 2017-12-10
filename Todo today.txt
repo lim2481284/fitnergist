@@ -1,90 +1,294 @@
 
-web development note 
-
-prepare attack and defecned 
-	- install tool 
-		- virtual box 
-		- linux ? 
-		- 7 zip 
-		- hashmyfiles
-		- forensic tool 
-		
-
-fyp 
-	- progress bar 
-	- user role problem 
-	- profile page 
-		- profile picture 
-	- score point 
-	- challenge 
-		- create challenge
-		- achieve challenge
-	- ranking 
-		- based on score point 
-		- use profile picture 
-	- achievement 
-		- create achievement
-		- achieve achievemet 
-	- redeem
-		- create redeem item 
-		- redeem item 
-			- reduce score 
-	- fitcamp
-		- create camp
-		- join camp 
-	- product page 
-	- forum page  ( put in webNote ) 
-	
-	- think of unqieu point 
-	- make this website work and sell it ? 
-	- change ALL UI
-
-admin dashboard 
-	- content management 
-		- create fitcamp 
-		- create achievement , challenge
-		- create redeem item 
-		- create pdocut 
-	- report managemnet 
-	- user management 
-	- tracker 
-	- dashboard 
-	
-coach dashboard	
-	- dahsboard
-	- fitcamp
-	- forum  
-	- track 
-	- profile 
-	
-user 
-	- user 
-		- profile 
-		- challenge 
-		- ranking 
-		- acheivement 
-		- redeem 
-	- fitcamp
-	- forum 
-	- product 
-	- history 
-		- redeem history 
-		- purchase history 
-		- fitcamp history 
-		
-table : 
-	user : id , pass ,name ,email, age, roleId, address, gender, contact, registerDate, username 
-	attribute : height , weight, fat, water, visceral fat, bmr, pr 
-	forum : id , userId, content ,date ,img_url  	
-	product : id ,name, img_url, description, quantity, price
-	redeem : id, img_url, name, description, point, quantity
-	achievement : id, img_url, name, description, goal_condition, goal_value, scorepoint 	
-	user_achieve : userId, achevieveId, date 
-	challenge : id, img_url, name, description, scorepoint
-	user_challenge : user_id, challenge_id, date 
-	fitcamp : id, expired_date, start_date, name, location, description 
-	fitcamp_coach : camp_id, user_id 
-	user_fitcamp : user_id, camp_id, date 
-	
 Main purpose : to propose gamification strategy in fitness management 
+
+
+- Change UI
+- Setup all the database 
+- change to laravel 
+- Think of unique point 
+- Complete all function : make it real
+- login password hash :  check how to do it 
+- think of security 
+
+1 - Login 
+	- 3 user 
+		- admin
+		- user 
+		- trainer 
+
+2 - admin 
+	- top menu	
+		- show admin name 
+	- content management 
+		- fitcamp
+			- create fitcamp 
+			- edit fitcamp
+			- delete fitcamp
+			- view fitcamp
+			- assign coach 
+		- acheivement
+			- create acheivement 
+			- edit achievement 
+			- delete achievement 
+			
+		- challenge
+			- create challenge 
+			- edit challenge 
+			- delete challenge 
+		- redeem
+			- create redeem 
+			- edit redeem 
+			- delete redeem 
+			
+		- product 
+			- create product 
+			- edit product 
+			- delete product 
+	- report managemnet 
+		- view totol user 
+		- view totol redeem 
+		- view top performace trainer 
+		- view top performance user 
+		- view statistic of the user 
+		- view statistic of fitcamp participant 
+	- user management 
+		- manage user account 
+		- manage trainer account 
+			- add trainner account 
+			- delete trainner account 
+			- edit trainner account 
+	- tracker 
+		- track user 
+	- dashboard 
+		- view summary 
+		- display timetable 
+		- display timeline 
+	- forum 
+		- create forum 
+		- edit forum 
+		- write comment 
+		- delet ecomment 
+		- edit comment 
+		- delete forum 
+	
+3 - trainer 
+	- top menu 
+		- show the point 
+		- show trainer name 
+	- ranking 
+		- show ranking 
+		- view other people point 
+	- dahsboard
+		- display timetable 
+		- display timeline 
+	- fitcamp
+		- create fitcamp 
+		- edit fitcamp
+		- delete fitcamp 
+		- assign trainer 
+	- forum  
+		- create forum 
+		- edit forum 
+		- write comment 
+		- delet ecomment 
+		- edit comment 
+		- delete forum 
+	- track 
+		- track user record 
+	- profile 
+		- edit profile 
+		- upload profile pic 
+	
+4 - User 
+	- top menu 
+		- display username 
+		- display user total score point 
+		- logout 
+		- dispaly notification : optional 
+		- popout for feedback after user complete the fitcamp 
+	- menu
+		- dashboard 
+			- view final goal 
+			- view timeline with photo , activity 
+			- view guideline 
+		- user
+			- profile 
+				- Edit profile 
+				- upload profile picture 				
+			- challenge 
+				- View challenge list 
+				- view completed challenge 
+				- view the requriement to achieve challenge 
+				- view challenge point 
+				- view how many people achieve
+				- view achieved time 
+			- ranking 
+				- view ranking list 	
+				- view ranking up or down  ( optional ) 
+				- view other user point 
+			- acheivement 
+				- view achievement list 
+				- view completed achievement 
+				- view achievement requirement 
+				- view achievement point 
+				- view how many people achieve
+				- view achived time 
+			- redeem 
+				- view product with point 
+				- can redeem with point 
+		- fitcamp
+			- view fitcamp list 
+			- view fitcamp detail 
+			- join the fitcamp
+			- cancel fitcamp 
+		- forum
+			- create forum
+			- write comment 
+			- delete forum
+			- delet comment 
+			- edit forum
+			- edit comment 			
+		- product 
+			- view product 
+			- buy product 
+				- contact admin 
+		- history
+			- view redeem history 
+			- view purchase history 
+			- view fitcamp history 
+				- timeline 
+	
+	
+table : 
+	user : userId ,img_url, userPass ,name ,email, age, roleId, address, gender, contact, registerDate, username 
+		- createUser()
+		- editUser()
+		- deleteUser()
+		- checkUserRole()
+		- checkUnique()
+	
+	attribute : userId, height , weight, fat, water, visceral fat, bmr, pr 
+		- addAttribute()
+		- updateAttribute()
+		
+	forum : forumId , userId, content ,date ,img_url  	
+		- createForum()
+		- deleteForum()
+		- editForum()
+	
+	product : productId ,name, img_url, description, quantity, price
+		- addProduct()
+		- editProduct()
+		- deleteProduct()
+		
+	redeem : redeemId, img_url, name, description, point, quantity
+		- addRedeem()
+		- editRedeem()
+		- deleteRedeem() 
+		
+	achievement : achievementId, img_url, name, description, goal_condition, goal_value, scorepoint
+		- addAcheivement()
+		- deleteAchievement()
+		- editAchievement()
+		
+	user_achieve : userId, achevieveId, date 
+		- addAchieve()
+		
+	challenge : challengeId, img_url, name, description, scorepoint
+		- addChallenge()
+		- deleteChallenge()
+		- editChallenge()
+		
+	user_challenge : user_id, challenge_id, date 
+		- addUserChallenge()
+		
+	fitcamp : fitcampId, expired_date, start_date, name, location, description 
+		- addFitcamp()
+		- editFitcamp()
+		- deleteFitcamp()
+		
+	fitcamp_coach : fitcamp_id, user_id 
+		- addCoach()
+		- editCoach()
+		- deleteCoach()
+		
+	user_fitcamp : user_id, fitcamp_id, date 
+		- addUserCamp()
+		- editUserCamp()
+		- deleteUserCamp()
+	
+Route :
+	- /dashboard
+		- admin : display summary 
+		- user : display timeline, goal and guideline 
+		- trainer : display timetable, timeline and guideline 
+	- /user 
+		- admin	: user management 
+		- user : profile 
+		- trainer : profile 
+	- /product
+		- admin
+		- user 
+		- trainer 
+	- /fitcamp
+		- admin
+		- user 
+		- trainer 
+	- /forum
+		- admin
+		- user 
+		- trainer 
+	- /history 
+		- admin
+		- user 
+		- trainer 	
+	- /redeem
+		- admin
+		- user 
+		- trainer 	
+	- /achievement 
+		- admin
+		- user 
+		- trainer 	
+	- /challenge 
+		- admin
+		- user 
+		- trainer 	
+	- /ranking 
+		- admin
+		- user 
+		- trainer 	
+	- /track
+		- admin
+		- user 
+		- trainer 	
+
+
+Controller :
+	- login 
+		- check user role 
+
+Midleware: ? 
+
+
+
+API :
+	- fitcamp
+	- product 
+	- achievemnet 
+	- challenge 
+	- ranking 
+	- track
+	- redeem
+	- history 
+	- forum 
+		- GET /api/forum/{id}
+		- POST /api/forum/{id}
+		- PUT /api/forum/{id}
+	- login / register 
+	- user 
+		- POST /api/user/{id} 
+		- GET /api/user/{id} 
+		
+	
 	
