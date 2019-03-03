@@ -1,0 +1,39 @@
+Gamification Area 
+	- Business 
+	- School
+	- SME 
+	- Health care & Fitness 
+	- Restraurant 
+
+
+Gamification element 
+	- Goal setting 
+	- Ranking 
+	- Challenge 
+	- Achievement 
+	- Score point 
+	- Level 
+	- EXP 
+	- Redeem 
+	- avatar 
+	- badget 
+	- timeline 
+	- forum 
+
+Earn point method 
+	- challenge 
+	- achievement 
+	- forum 
+	- Goal 
+	- visiting 
+
+Type of goal 
+
+Type of challenge / achievement / calculation 
+
+Gamification verification method 
+	- QR
+	- Manual
+	- Calculation 
+	- API
+

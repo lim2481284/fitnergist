@@ -1,90 +1,161 @@
+Minimum requirement
+	- Admin
+			- customize goal
+			- customize track
+			- goal add 2 more type : gain  / maintain
+			- loader
+							- loader for admin page
+			- achievement calculation
+				- walking step
+				- rank
+				- attribute calculation
+				- participate time
+				- login time
+				- number of goal achievement
+				- number of redeem
+	- trainer can give suggestion (food intake) to the user
+	- notification page , email notification, reason to delete
 
-web development note 
 
-prepare attack and defecned 
-	- install tool 
-		- virtual box 
-		- linux ? 
-		- 7 zip 
-		- hashmyfiles
-		- forensic tool 
-		
+If go real
+	- bug fix
+			- menu didnt hide from setup profile		: optional
+			- timeline bug			: Take care
+			- ranking not accurate bug		: Take care
+			- admin : in page loader 
 
-fyp 
-	- progress bar 
-	- user role problem 
-	- profile page 
-		- profile picture 
-	- score point 
-	- challenge 
-		- create challenge
-		- achieve challenge
-	- ranking 
-		- based on score point 
-		- use profile picture 
-	- achievement 
-		- create achievement
-		- achieve achievemet 
-	- redeem
-		- create redeem item 
-		- redeem item 
-			- reduce score 
-	- fitcamp
-		- create camp
-		- join camp 
-	- product page 
-	- forum page  ( put in webNote ) 
-	
-	- think of unqieu point 
-	- make this website work and sell it ? 
-	- change ALL UI
+	- improvement
+			- all notification by email : optional
+					- https://code.tutsplus.com/tutorials/how-to-send-emails-in-laravel--cms-30046
+			- piture auto crop
+					- https://foliotek.github.io/Croppie/
 
-admin dashboard 
-	- content management 
-		- create fitcamp 
-		- create achievement , challenge
-		- create redeem item 
-		- create pdocut 
-	- report managemnet 
-	- user management 
-	- tracker 
-	- dashboard 
-	
-coach dashboard	
-	- dahsboard
-	- fitcamp
-	- forum  
-	- track 
-	- profile 
-	
-user 
-	- user 
-		- profile 
-		- challenge 
-		- ranking 
-		- acheivement 
-		- redeem 
-	- fitcamp
-	- forum 
-	- product 
-	- history 
-		- redeem history 
-		- purchase history 
-		- fitcamp history 
-		
-table : 
-	user : id , pass ,name ,email, age, roleId, address, gender, contact, registerDate, username 
-	attribute : height , weight, fat, water, visceral fat, bmr, pr 
-	forum : id , userId, content ,date ,img_url  	
-	product : id ,name, img_url, description, quantity, price
-	redeem : id, img_url, name, description, point, quantity
-	achievement : id, img_url, name, description, goal_condition, goal_value, scorepoint 	
-	user_achieve : userId, achevieveId, date 
-	challenge : id, img_url, name, description, scorepoint
-	user_challenge : user_id, challenge_id, date 
-	fitcamp : id, expired_date, start_date, name, location, description 
-	fitcamp_coach : camp_id, user_id 
-	user_fitcamp : user_id, camp_id, date 
-	
-Main purpose : to propose gamification strategy in fitness management 
-	
+			- user
+				- score point should show at every page
+				- edit user profile and reset goal function
+				- setup add new data based on the form
+				- timeline add achievement, challenge...
+
+			- admin
+				- all the select bar change to auto search input
+				- add score to goal
+				- soft delete function
+				- verify, attendance
+					- admin can search when key in username / name
+
+			- fitcamp
+				- should show fitcamp and attendance history
+				- admin have to tell reason to the user if admin delete fitcamp and user already register fitcamp
+				- Date validation
+				- locaion chooser
+
+			- forum
+				- admin have to give reason when delete post or comment : email
+
+
+			- challenge
+				- add period of time : optional
+				- view past challenge / deleted challenge
+				- Date validation
+
+			- security
+				- laravel authentication
+				- email verification
+				- role switching by using laravel plugin
+				- remember password, keep login
+				- forgot password
+				- role and permission and action
+
+	- new feature / requirement
+		- customize all tracking attribue + goal setting
+
+		- rank : junior, senior ...
+		- avatar , avatar management
+
+		- user profile statsitic and admin statsistic
+			- all user attribute statistic : line chart
+			- fitcamp participant statistic
+			- overall user improvement statistic
+
+		- calander for fitcamp , timeline put into profile tab
+		- feedback function for user side
+		- 404 page
+		- change 2 user to 3 user
+			- trainer
+				- forum
+				- profile
+				- fitcamp
+				- tracking
+
+			- admin
+				- user management
+					- create trainer account
+				- statistic management
+				- challenge and achievement managemnet
+				- redeem management
+				- registed fitcamp user report
+			- new changing
+				- fitcamp can assign trainer
+
+
+	- other
+		- convert to android
+		- host a server database
+		- user manual: after changing and adding new feature
+
+
+	- UX
+		- press enter UX
+		- different screen size UX
+		- menu icon with label : mobile
+
+		- track and attendance should combine, attendance should have note button
+			- validation, attendned but didnt track yet
+			- after track still can edit
+			- remain same button ...
+
+		- Homepage and setup
+			- deactivate help
+
+		- Challenge and achievement from user page
+			- Click outside will remove focus
+
+		- Loader
+			- wait picture load first
+			- loader for admin
+
+		- First time login
+			- next button
+			- help - define goal
+			- goal type change the much / long
+			- change the word to more user friend : water -> ?
+
+		-Admin side and forum
+			- limit the character size
+
+			New idea
+				- Egamify
+					- understand : customization, gamificaiton, fitness knowledge, requirement
+					- get some idea from here : https://iq.intel.com/gamification-apps-make-fitness-fun/
+					- care employee health ( emee )
+					- join and earn ?
+					- tracking data
+					- indirectly promote something
+					- user scope
+						- fitness and event and dance  ?
+						- sme cooperate with fitcamp ?
+						- sme ?
+						- university
+
+			Make it real
+				- brainstorm
+					- how to make it more flexible and less manual verification
+					- how to categories the calculation
+					- how to make calculation flexible : customize calculation
+					- how to achieve " everything gamify "
+
+
+--------------------------------------------------
+1 - done registration and role swithcing
+	https://laracasts.com/discuss/channels/tips/middleware-to-show-items-based-on-user-roles
+	http://laravelcode.com/post/laravel-passport-create-rest-api-with-authentication

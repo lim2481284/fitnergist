@@ -1,0 +1,26 @@
+.author{
+	width:100%;
+}
+.tab{
+	width: 100%;
+	padding-top: 30%;
+}
+.blog-card .photo{
+	width:100%;
+	background-size: contain;
+	height: 200px;
+}
+.blog-card{
+	height:380px;
+}
+.blog-card .description{
+	width:100%;
+	padding-top:20px;
+}
+.blog-card .description a{
+
+	font-size: 140%;
+}
+.blog-card .details{
+	width:100%;
+}
